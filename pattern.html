@@ -1,0 +1,40 @@
+package com.del;
+
+import java.util.Scanner;
+
+public class pattern {
+
+	public static void main(String[] args) {
+		System.out.println("enter the rows:");
+		Scanner scan=new Scanner(System.in);
+		int i=scan.nextInt();
+		int j=i/2;
+		int o=1;
+		int k,n,l;
+		int m =i+j;
+		for(k=1;k<=j;k++) {
+			for(l=1;l<=(m-k);l++) {
+			System.out.print(" ");
+			}
+			for(n=1;n<=o;n++) {
+			System.out.print("* ");
+			}
+			o++;
+			System.out.println();
+		}
+		for(k=(j+1);k<=i;k++)
+		{
+			for(l=1;l<=(2*(i-k)-1);l++) {
+				System.out.print(" ");
+			}
+			for(n=1;n<(o+2);n++)
+			{
+				System.out.print("* ");
+			}
+			o=o+2;
+			System.out.println();
+		}
+
+	}
+
+}
